@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mi Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Mi portafolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#Inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">QUIEN SOY</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">ESTUDIOS</a></li>
+                    <li><a href="#proyecto" onclick="seleccionar()">PROYECTO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--  INICIO -->
+    <main class="inicio" id="Inicio">
+        <div class="info-content">
+            <h1>camilo espinosa</h1> 
+            <h2>Ingeniero</h2>
+        </div>
+        <div class="contenedor-img">
+        <img src="img/foto.jpg" alt="">
+        </div>
+    </main>
+    
+    <!--  SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Quien soy</h2>
+            <p>Hola, soy Camilo Espinosa Me considero una persona responsable, colaboradora con facilidad de adaptación para
+                desempeñar labores donde pueda aprender y demostrar mis capacidades, al interior de una
+                empresa en la que pueda crecer a futuro tanto a nivel personal como profesional</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Correo</strong>
+                            camiloready14@gmil.com
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            313 401 71 47
+                        </li>
+                        <li>
+                            <strong>Dirrecion</strong>
+                            carrera 89 a Bis # 8 A 18
+                        </li>
+                        <li>
+                            <strong>Ciudad</strong>
+                            Bogota
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Habilidades</h2>
+            <div class="fila" data-aos="fade-down" data-aos-duration="3000">
+               
+                <div class="col">
+                    <h3>Lenguajes</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Php</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- DEFINICIONES -->
+                <div class="col">
+                    <h3>Trabajo</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LINEA DE TIEMPO -->
+    <section id="curriculum" class="curriculum">
+        <div class="timeline-items"data-aos="fade-down-left" data-aos-duration="3000">
+            <h1>Estudios</h1>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2009-2015</div>
+                <div class="timeline-content">
+                    <h2>Liceo Moderno Los andes</h2>
+                    <h3>Estudio primaria</h3>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2016-2021</div>
+                <div class="timeline-content">
+                    <h2>Colegio Nicolas Esgurra</h2>
+                    <h3>Estudio primaria</h3>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2022-2025</div>
+                <div class="timeline-content">
+                    <h2>Sena</h2>
+                    <h3>Estudio primaria</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <main>
+        <section id="proyecto" >
+             <div class="proyecto">
+                <h2>Mis Proyectos</h2>
+                <p>Estos son mis protyectos elaborados con HTML,CSS y JAVASCRIPT</p>
+                
+                <div class="row">
+                    <article class="col-leg-3 col-md-3">
+                        <div class="card-proyectos"data-aos="flip-left" data-aos-duration="3000">
+                            <img src="img/restaurante.png" alt="Proyectos">
+                            <h3>1</h3>
+                            <h4>comidas</h4>
+                            <p>Restaurante de Comidas rapidas</p>
+                            <a href="#"> Observar</a>
+                        </div>
+                    </article>
+                    <article class="col-leg-3 col-md-3">
+                        <div class="card-proyectos"data-aos="flip-right" data-aos-duration="3000">
+                            <img src="img/bosques.png" alt="Proyectos">
+                            <h3>2</h3>
+                            <h4>Bosques</h4>
+                            <p>La naturaleza y los bosques  verdes</p>
+                            <a href="#"> Observar</a>
+                        </div>
+                    </article>
+                    <article class="col-leg-3 col-md-3">
+                        <div class="card-proyectos"data-aos="flip-left" data-aos-duration="3000">
+                            <img src="img/algoritmos.png" alt="Proyectos">
+                            <h3>3</h3>
+                            <h4>Algoritmos</h4>
+                            <p>Soluciones matematicas y fisicas</p>
+                            <a href="#"> Observar</a>
+                        </div>
+                    </article>
+                </div>
+             </div>
+        </section>
+    </main>
+
+    <!--  CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila" data-aos="zoom-out-left"  data-aos-duration="3000">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="script.js"></script>
+</body>
+</html>

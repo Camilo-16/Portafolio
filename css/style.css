@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Milonga&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Milonga', serif;
+    margin: 0;
+    padding: 0;
+}
+/* MENU */
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-size: 36px;
+    color: #EF8354;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #EF8354;
+}
+.nav-responsive{
+    background-color: #EF8354;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* SECCION I N I C I O */
+.inicio{
+    background-image: url(../img/fondo.png);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.inicio img{
+    margin-top: 40px;
+    border: 10px solid #EF8354;
+    display: block;
+    width: 120%;
+    height: 420px;
+    margin: auto;
+    border-radius: 100%;
+   
+}
+h1  {
+    width: 50vw;
+    height: 60px;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    margin-top: 40px;
+    font-size: 42px;
+}
+h2{
+    font-size: 35px;
+    text-align: center;
+    color: #EF8354;
+    text-align: center;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+/* QUIEN SOY */
+.sobremi{
+    background-color: #2D3142;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    color: #EF8354;
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+    color: #EF8354;
+    font-weight: bold;
+}
+.sobremi .fila{
+    display: flex;
+    justify-content: center;
+}
+.sobremi .fila .col{
+    width: 30%;
+    font-size: 20px;
+    padding: 20px 0;
+}
+.sobremi .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #EF8354;
+    text-align: center;
+}
+.sobremi .fila .col ul{
+    list-style: none;
+}
+.sobremi .fila .col ul li{
+    margin: 10px 0;
+}
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #EF8354;
+    width: 130px;
+
+}
+
+/* SECCION SKILLS */
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    color: #EF8354;
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+
+}
+.skills .fila{
+    display: flex;
+}
+.skills .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.skills .skill > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill{
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso{
+    background-color: #0085FF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+.skills .skill .barra-skill span{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #0085FF;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+/* Estas clases se agregaran dinamicamente mediante javascript */
+.skills .skill .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 25%;}
+}
+
+.skills .skill .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .php{
+    width: 0%;
+    animation: 2s Php forwards;
+}
+@keyframes Php {
+    0%{width: 0%;}
+    100%{width: 25%;}
+}
+
+.skills .skill .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
+
+.skills .skill .trabajo{
+    width: 0%;
+    animation: 2s trabajo forwards;
+}
+@keyframes trabajo {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+.skills .skill .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad {
+    0%{width: 0%;}
+    100%{width: 55%;}
+}
+
+/* SECCION CURRICULUM */
+.curriculum{
+    background-color: #2D3142;
+    color: #fff;
+    padding: 50px;
+}
+.curriculum h1{
+    color: #EF8354;
+    font-size: 50px;
+    align-items: flex-start;
+    width: 10vw;
+}
+
+.timeline-items{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.timeline-items::before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #EF8354;
+    left: calc(50% - 1px);
+}
+
+.timeline-item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+    height: 16px;
+    width: 16px;
+    background-color: #0085FF;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+.timeline-date{
+    font-size: 18px;
+    color: #EF8354;
+    margin: 6px 0 15px;
+}
+.timeline-content{
+    background-color: #252A2E;
+    padding: 30px;
+    border-radius: 5px;
+}
+.timeline-content h2{
+    font-size: 20px;
+    color: #fff;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+}
+.timeline-content h3{
+    font-size: 20px;
+    color: #EF8354;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+}
+.timeline-content p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+/*responsive*/
+@media(max-width: 767px){
+    .timeline-items::before{
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+        padding-left: 37px;
+    }
+    .timeline-dot{
+        left: 0;
+    }
+}
+
+/* PROYECTO */
+.proyecto{
+    width: 100%;
+    background-color: #252A2E;
+    position: relative;
+    padding: 40px 0;
+    text-align: center;
+    
+}
+#proyecto h2{
+    color: #EF8354;
+    font-size: 40px;
+    font-weight: 700;
+}
+#proyecto p{
+    color: #fff;
+    font-size: 25px;
+}
+#proyecto .row{
+    margin-top: 70px;
+    justify-content: center;
+}
+#proyecto .card-proyectos{
+    background-color: #2D3142;
+    border-radius: 4px;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    text-align: center;
+    border: 4px solid #0085FF;
+}
+
+#proyecto .card-proyectos img{
+    background: #fff;
+    width: 80px;
+    padding: 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+}
+#proyecto .card-proyectos h3{
+    text-align: right;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#proyecto .card-proyectos h4{
+    color: #EF8354;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 15px; 
+}
+#proyecto .card-proyectos p{
+    font-size: 18px;
+    color: #fff;
+    text-align: left;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+#proyecto .card-proyectos a{
+    color: #EF8354;
+    text-align: left;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 2px solid #0085FF ;
+
+}
+
+
+/* CONTACTO */
+.contacto{
+    height: 230%;
+    background-color: #2D3142;
+    color: #fff;
+    padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 700px;
+    margin: auto;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+.contacto .fila h2{
+    font-size: 48px;
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .fila{
+    display: flex;
+    justify-content: center;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+    
+}
+.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0085FF;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .curriculum .fila{
+        display: block;
+    }
+    .curriculum .fila .col{
+        width: 90%;
+    }
+    .curriculum .fila .derecha{
+        margin-left: 20px;
+    }
+    
+}
